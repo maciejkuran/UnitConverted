@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weight Converter - UnitConverted.com</title>
+    <meta
+      name="description"
+      content="Free weight converter. Convert milligram, gram, kilogram, metric ton, pound, ounce, carrat. Milligram to gram, killogram to metric ton, pound to ounce, ounce to carrat.
+    "
+      ;
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
+    <container class="mainContainer">
+      <header>
+        <a href="https://unitconverted.com">
+          <img src="./img/unitconverted logo.svg" width="250rem" alt="unitconverted logo, online unit converter" />
+        </a>
+      </header>
+      <main>
+        <div class="wrapper">
+          <a href="https://unitconverted.com">
+            <span><i class="fa-solid fa-arrow-left-long"></i>home page</span></a
+          >
+          <h1>Weight Converter</h1>
+          <p>Convert milligram, gram, kilogram, metric ton, pound, ounce, carat</p>
+        </div>
+        <div class="converterWrapper">
+          <p class="fromMobile">From:</p>
+          <div class="converterInternalWrapper1">
+            <p class="from">From:</p>
+            <input class="inputUnit" type="number" placeholder="write numbers" />
+            <select name="unitsFrom" class="unitsFrom">
+              <option value="fromkg" class="fromkg">kilogram</option>
+              <option value="fromgram" class="fromgram">gram</option>
+              <option value="frommilligram" class="frommilligram">milligram</option>
+              <option value="frommetricton" class="frommetricton">metric ton</option>
+              <option value="frompound" class="frompound">pound</option>
+              <option value="fromounce" class="fromounce">ounce</option>
+              <option value="fromcarat" class="fromcarat">carrat</option>
+            </select>
+          </div>
+          <p class="toMobile">To:</p>
+          <div class="converterInternalWrapper2">
+            <p class="to">To:</p>
+            <select name="unitsTo" class="unitsTo">
+              <option value="togram" class="togram">gram</option>
+              <option value="tokg" class="tokg">kilogram</option>
+
+              <option value="tomilligram" class="tomilligram">milligram</option>
+              <option value="tometricton" class="tometricton">metric ton</option>
+              <option value="topound" class="topound">pound</option>
+              <option value="toounce" class="toounce">ounce</option>
+              <option value="tocarat" class="tocarat">carrat</option>
+            </select>
+            <button class="convertBtn">CONVERT</button>
+          </div>
+        </div>
+        <p class="conversionResult"></p>
+        <p class="formula"></p>
+
+        <section class="sectionBelowConverterPage">
+          <div class="studyLengthUnits">
+            <h3>Study Weight Units</h3>
+            <div class="studyLengthUnitsFlex">
+              <div>
+                <a href="./study-units/milligram">Milligram</a>
+                <a href="./study-units/gram">Gram</a>
+                <a href="./study-units/kilogram">Kilogram</a>
+                <a href="./study-units/metric-ton">Metric Ton</a>
+              </div>
+              <div>
+                <a href="./study-units/pound">Pound</a>
+                <a href="./study-units/ounce">Ounce</a>
+                <a href="./study-units/carat">Carat</a>
+              </div>
+            </div>
+          </div>
+          <search-category-on-category-page></search-category-on-category-page>
+        </section>
+      </main>
+
+      <my-footer> </my-footer>
+    </container>
+
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./components.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/js/all.min.js"
+      integrity="sha512-Cvxz1E4gCrYKQfz6Ne+VoDiiLrbFBvc6BPh4iyKo2/ICdIodfgc5Q9cBjRivfQNUXBCEnQWcEInSXsvlNHY/ZQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Length Converter- UnitConverted.com</title>
+    <meta
+      name="description"
+      content="Free online length converter. Convert cm to mm, mm to cm, km to mile, km to m, yard to foot, foot to inch, yard to inch, mile to foot
+    "
+      ;
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
+    <container class="mainContainer">
+      <header>
+        <a href="https://unitconverted.com">
+          <img src="./img/unitconverted logo.svg" width="250rem" alt="unitconverted logo, online unit converter" />
+        </a>
+      </header>
+      <main>
+        <div class="wrapper">
+          <a href="https://unitconverted.com">
+            <span><i class="fa-solid fa-arrow-left-long"></i>home page</span></a
+          >
+          <h1>Length Converter</h1>
+          <p>Convert mm, cm, m, km, mile, yard, foot, inch</p>
+        </div>
+        <div class="converterWrapper">
+          <p class="fromMobile">From:</p>
+          <div class="converterInternalWrapper1">
+            <p class="from">From:</p>
+            <input class="inputUnit" type="number" placeholder="write numbers" />
+            <select name="unitsFrom" class="unitsFrom">
+              <option value="frommm" class="frommm">millimeter</option>
+              <option value="fromcm" class="fromcm">centimeter</option>
+              <option value="fromm" class="fromm">meter</option>
+              <option value="fromkm" class="fromkm">kilometer</option>
+              <option value="frommile" class="frommile">mile</option>
+              <option value="fromyard" class="fromyard">yard</option>
+              <option value="fromfoot" class="fromfoot">foot</option>
+              <option value="frominch" class="frominch">inch</option>
+            </select>
+          </div>
+          <p class="toMobile">To:</p>
+          <div class="converterInternalWrapper2">
+            <p class="to">To:</p>
+            <select name="unitsTo" class="unitsTo">
+              <option value="tocm" class="tocm">centimeter</option>
+              <option value="tomm" class="tomm">millimeter</option>
+              <option value="tom" class="tom">meter</option>
+              <option value="tokm" class="tokm">kilometer</option>
+              <option value="tomile" class="tomile">mile</option>
+              <option value="toyard" class="toyard">yard</option>
+              <option value="tofoot" class="tofoot">foot</option>
+              <option value="toinch" class="toinch">inch</option>
+            </select>
+            <button class="convertBtn">CONVERT</button>
+          </div>
+        </div>
+        <p class="conversionResult"></p>
+        <p class="formula"></p>
+
+        <section class="sectionBelowConverterPage">
+          <div class="studyLengthUnits">
+            <h3>Study Length Units</h3>
+            <div class="studyLengthUnitsFlex">
+              <div>
+                <a href="./study-units/millimeter">Millimeter</a>
+                <a href="./study-units/centimeter">Centimeter</a>
+                <a href="./study-units/meter">Meter</a>
+                <a href="./study-units/kilometer">Kilometer</a>
+              </div>
+              <div>
+                <a href="./study-units/mile">Mile</a>
+                <a href="./study-units/yard">Yard</a>
+                <a href="./study-units/foot">Foot</a>
+                <a href="./study-units/inch">Inch</a>
+              </div>
+            </div>
+          </div>
+          <search-category-on-category-page> </search-category-on-category-page>
+        </section>
+      </main>
+      <my-footer> </my-footer>
+    </container>
+
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./components.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/js/all.min.js"
+      integrity="sha512-Cvxz1E4gCrYKQfz6Ne+VoDiiLrbFBvc6BPh4iyKo2/ICdIodfgc5Q9cBjRivfQNUXBCEnQWcEInSXsvlNHY/ZQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

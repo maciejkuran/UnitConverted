@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Converter - UnitConverted.com</title>
+    <meta
+      name="description"
+      content="Free time converter. Convert second to millisecond, minute to hour, hour to minute, week to day, year to week, minute to year. Learn about time units.
+    "
+      ;
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
+    <container class="mainContainer">
+      <header>
+        <a href="https://unitconverted.com">
+          <img src="./img/unitconverted logo.svg" width="250rem" alt="unitconverted logo, online unit converter" />
+        </a>
+      </header>
+      <main>
+        <div class="wrapper">
+          <a href="https://unitconverted.com">
+            <span><i class="fa-solid fa-arrow-left-long"></i>home page</span></a
+          >
+          <h1>Time Converter</h1>
+          <p>Convert second, millisecond, minute, hour, day, week, month, year</p>
+        </div>
+        <div class="converterWrapper">
+          <p class="fromMobile">From:</p>
+          <div class="converterInternalWrapper1">
+            <p class="from">From:</p>
+            <input class="inputUnit" type="number" placeholder="write numbers" />
+            <select name="unitsFrom" class="unitsFrom">
+              <option value="fromsecond" class="fromsecond">second</option>
+              <option value="frommillisecond" class="frommillisecond">millisecond</option>
+              <option value="fromminute" class="fromminute">minute</option>
+              <option value="fromhour" class="fromhour">hour</option>
+              <option value="fromday" class="fromday">day</option>
+              <option value="fromweek" class="fromweek">week</option>
+              <option value="frommonth" class="frommonth">month</option>
+              <option value="fromyear" class="fromyear">year</option>
+            </select>
+          </div>
+          <p class="toMobile">To:</p>
+          <div class="converterInternalWrapper2">
+            <p class="to">To:</p>
+            <select name="unitsTo" class="unitsTo">
+              <option value="tomillisecond" class="tomillisecond">millisecond</option>
+              <option value="tosecond" class="tosecond">second</option>
+              <option value="tominute" class="tominute">minute</option>
+              <option value="tohour" class="tohour">hour</option>
+              <option value="today" class="today">day</option>
+              <option value="toweek" class="toweek">week</option>
+              <option value="tomonth" class="tomonth">month</option>
+              <option value="toyear" class="toyear">year</option>
+            </select>
+            <button class="convertBtn">CONVERT</button>
+          </div>
+        </div>
+        <p class="conversionResult"></p>
+        <p class="formula"></p>
+
+        <section class="sectionBelowConverterPage">
+          <div class="studyLengthUnits">
+            <h3>Study Time Units</h3>
+            <div class="studyLengthUnitsFlex">
+              <div>
+                <a href="./study-units/millisecond">Millisecond</a>
+                <a href="./study-units/second">Second</a>
+                <a href="./study-units/minute">Minute</a>
+                <a href="./study-units/hour">Hour</a>
+              </div>
+              <div>
+                <a href="./study-units/day">Day</a>
+                <a href="./study-units/week">Week</a>
+                <a href="./study-units/month">Month</a>
+                <a href="./study-units/year">Year</a>
+              </div>
+            </div>
+          </div>
+          <search-category-on-category-page></search-category-on-category-page>
+        </section>
+      </main>
+
+      <my-footer> </my-footer>
+    </container>
+
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./components.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/js/all.min.js"
+      integrity="sha512-Cvxz1E4gCrYKQfz6Ne+VoDiiLrbFBvc6BPh4iyKo2/ICdIodfgc5Q9cBjRivfQNUXBCEnQWcEInSXsvlNHY/ZQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
