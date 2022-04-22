@@ -501,3 +501,6 @@ So in fact if you want to override any styles doing for example media queries, y
 I am happy that I was able to write my first app. It is not something innovative, but it
             is mine, from A to Z written by me. I am full of motivation to keep working hard. More
             projects coming soon. Thank you for reading.
+            
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
