@@ -503,4 +503,4 @@ I am happy that I was able to write my first app. It is not something innovative
             projects coming soon. Thank you for reading.
             
 ## Contributing
-Contributing to this project is very welcome.
+Contributing to this project is very welcome. Please send an inquiry.
