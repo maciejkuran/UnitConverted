@@ -250,8 +250,8 @@ The components.js file is the file that contains the individual components of th
                 adding this element to a variable named 'categories'.
               </p>
               <p>
-                I accessed DOM element &lt;button&gt; with a class of 'find' and added an Event
-                Listener on 'click', and wrote an anonymous function, passing no parameters.
+                I accessed DOM element &lt;button&gt; with a class of 'find' and attached an Event
+                Listener on 'click', with a callback function, passing no parameters.
               </p>
               <p>
                 I created a mutable variable 'let' and named it as 'options'. I assigned to variable
