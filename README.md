@@ -393,7 +393,7 @@ How does the browser know what units a user choose ? I created if conditions (in
             for loops) where I pointed the first looped element among 'options1' & 'options2', which
             is the 'options1[0]' & 'options2[0]'. Just a reminder that robots count from 0 instead of 1.
 
-Logically, the chosen unit by the user will always be the first one - [0].
+Logically, the chosen unit by a user will always be the first one - [0].
 
 Based on if statements the browser knows what to do and what functions should be invoked.           
             
