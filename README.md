@@ -215,8 +215,8 @@ I initially set 5 breakpoints.
 <img src="https://user-images.githubusercontent.com/103118542/163342255-e1577b4d-add3-48ce-9cb3-500e34dba344.png">
 </p>
   
- ## Javascript project files
-I decided to create 3 javascript files: main.js, functions.js, and components.js. The
+ ## JavaScript project files
+I decided to create 3 .js files: main.js, functions.js, and components.js. The
             proper division of files allowed me to keep the project in order and in case of any
             changes I would be able to do it intuitively and quickly.
 
@@ -235,7 +235,7 @@ The components.js file is the file that contains some individual components of t
             application but I can edit it from one place, and the changes will automatically appear
             everywhere. Components are sort of like re-usable templates.
   
- ## Programming problems solving - js concepts
+ ## Programming problems solving - JS concepts
   
   <b>1. The category search filter</b>
  <p>
