@@ -38,15 +38,13 @@ I was excited to develop this application. I would like to underline, that the s
  <ul>
             <li>program the category search filter</li>
             <li>
-              write functions that will convert the user input value and return the converted
-              value when the "convert" button is clicked
+              write functions that will convert a user input value and return converted value when the "convert" button is clicked
             </li>
             <li>
-              program select options so the user can change units easily in the app's interface
+              program select options so a user can change units easily in the app's interface
             </li>
             <li>
-              access DOM elements to display dynamically the calculation result and formula of
-              calculation on the screen
+              access DOM elements to display dynamically a calculation result and formula of calculation on the screen
             </li>
           </ul>
 
@@ -67,12 +65,12 @@ I was excited to develop this application. I would like to underline, that the s
 It's all great as long as you deal with a few files you might probably skip this part.
             This time I needed to prepare myself for over 50 files.
 
-Good files management was necessary to organize the development part. This app is
-            scalable which means, anytime it can be further developed - new categories, units and
+Files management was necessary to organize the development part. This app is
+            scalable which means that anytime it can be further developed - new categories, units and
             functionality added.
 
-It is great, if you open your app folder and can figure out pretty fast what is what and
-            get to work fast without much wasting of time. This was a part of my plan.
+It is great if you open your app folder and can figure out fast what is what and
+            get to work without wasting time. It was a part of my plan.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/103118542/163340960-49212509-5746-4f1f-a7e0-2a7497a74d62.png">
@@ -84,7 +82,7 @@ You might ask me why did I choose to write styles in SCSS. Well, I find it way m
             smart. This helps to organize code and just work faster. I love SASS and I think it's a
             powerful tool.
 
-I also believe that SASS helps me to follow "Don't repeat yourself' principle. I guess,
+I also believe that SASS helps me to follow the Don't repeat yourself principle. I guess,
             I've done a pretty good job in this project, not repeating styles by creating plenty of
             style cascades.
 
@@ -111,7 +109,7 @@ As browsers do not read SCSS files, all SCSS code was compiled to CSS with the h
 ],
 
 ```
-I basically have 4 scss files: style.scss, _globalStyles.scss, _desktopDefault.scss, _breakpoints.scss.
+I have 4 scss files: style.scss, _globalStyles.scss, _desktopDefault.scss, _breakpoints.scss.
 
 style.scss file has 3 lines of code where I import _globalStyles.scss,
             _desktopDefault.scss, _breakpoints.scss, with the help of @use syntax. I used @use
@@ -184,11 +182,11 @@ I initially set 5 breakpoints.
             version.
           </p>
           <p>
-            For example &lt;p&gt; tag with a class of 'from' was replaced by a &lt;p&gt; tag with a
+            For example &lt;p&gt; tag with the class of 'from' was replaced by a &lt;p&gt; tag with the
             class of 'fromMobile'. You may ask me why did I do it?
           </p>
           <p>
-            Well, the problem was that &lt;p&gt; tag with a class of 'from' was in a &lt;div&gt;
+            Well, the problem was that a &lt;p&gt; tag with the class of 'from' was in a &lt;div&gt;
             that has a 'flex' property set. This made it impossible to style on mobile to the point,
             where I wanted to let it be. That's why I created a new &lt;p&gt; tag and I grabbed it
             out of that &lt;div&gt; and moved it to the top. I hope you understand what I mean.
@@ -217,50 +215,50 @@ I initially set 5 breakpoints.
 <img src="https://user-images.githubusercontent.com/103118542/163342255-e1577b4d-add3-48ce-9cb3-500e34dba344.png">
 </p>
   
- ## Javascript project files
-I decided to create 3 javascript files: main.js, functions.js, and components.js. The
+ ## JavaScript project files
+I decided to create 3 .js files: main.js, functions.js, and components.js. The
             proper division of files allowed me to keep the project in order and in case of any
             changes I would be able to do it intuitively and quickly.
 
 The main.js file contains querySelectors that allow accessing DOM elements, event
             listener (convert button), for loops (looping both select option windows), with multi if
-            statements that call a particular function if a given condition is met by the user.
+            statements that call a particular function if a given condition is met by a user.
 
 The functions.js file is individual functions written for each unit conversion that
-            returns the value of the expression. All of these functions are exported and imported in
-            main.js file.
+            returns the value of the expression. All of these functions are exported and imported into
+            the main.js file.
 
-The components.js file is the file that contains the individual components of the
+The components.js file is the file that contains some individual components of the
             application that are duplicated and appear in multiple places on the interface. I
             created components like footer, unit lists, search-wrapper, with the idea that in the
             future if I want to apply changes, I don't have to edit in dozens of places in the
-            application but edit from one place, and the changes will automatically appear
+            application but I can edit it from one place, and the changes will automatically appear
             everywhere. Components are sort of like re-usable templates.
   
- ## Programming problems solving - js concepts
+ ## Programming problems solving - JS concepts
   
   <b>1. The category search filter</b>
  <p>
-                The category search filter is an app component that is imported in the HTML sheet
+                The category search filter is the application component that is imported in the HTML sheet
                 &lt;search-wrapper class="searchWrapper"&gt; &lt;/search-wrapper&gt;.
               </p>
               <p>This problem was solved easily.</p>
               <p>
-                I actually accessed DOM element &lt;select&gt; with a given class of 'categories'
-                adding this element to a variable named 'categories'.
+                I accessed DOM element &lt;select&gt; with the given class of 'categories'
+                adding this element to the variable named 'categories'.
               </p>
               <p>
-                I accessed DOM element &lt;button&gt; with a class of 'find' and added an Event
-                Listener on 'click', and wrote an anonymous function, passing no parameters.
+                I accessed DOM element &lt;button&gt; with the class of 'find' and attached an Event
+                Listener on 'click', with a callback function, passing no parameters.
               </p>
               <p>
-                I created a mutable variable 'let' and named it as 'options'. I assigned to variable
-                'options', a variable 'categories', adding property 'selectedOptions'.
+                I created a mutable variable 'let' and named it as the 'options'. I assigned to the variable
+                'options', the variable 'categories', adding property 'selectedOptions'.
               </p>
               <p>
-                I ran a for loop that looped through 'options', giving me access to selected option
-                by the user. Once the user chooses a specific category and clicks on 'find' button,
-                the category page will open.
+                I ran a for loop that looped through the 'options', giving me access to selected option
+                by a user. Once a user chooses a specific category and clicks on the 'find' button,
+                a category page will open.
               </p>
   
    <p align="center">
@@ -282,9 +280,9 @@ window.open(options[i].value, '_self');
 
 ```
 
-<b>2. Functions that convert the user input value</b> <br>
-I wrote an arrow function and passed the parameter 'inputValue'. InputValue is basically
-            whatever the user will write in the input field.
+<b>2. Functions that convert a user input value</b> <br>
+I wrote an arrow function and passed the parameter 'inputValue'. The 'InputValue' is basically
+            whatever a user will write in the input field.
 ``` Javascript
 // Decimal numbers are NOT rounded
 
@@ -296,8 +294,8 @@ return inputValue / 10;
 };
 ```
 
-As 'inputValue' parameter is a DOM element, I accessed this element with a basic line of
-            code. I made sure, that any number written in the input field will be turned to be a
+As the 'inputValue' parameter is a DOM element, I accessed this element with a basic line of
+            code. I made sure, that any number written in the input field will be converted to a
             "Number", instead of being a 'String'. By default, any content in the input field is
             treated as a "String".
 
@@ -306,7 +304,7 @@ const input = Number(document.querySelector('.inputUnit').value);
 ```
             
  <p>
-            A certain function gets invoked, when condition is met, which basically means that in
+            A certain function gets invoked, when condition is met, which means that in
             &lt;select&gt; &lt;option&gt; user picked to convert mm to cm. The name 'calc' is added
             initially to each function because I imported to main.js all of the functions from a
             functions.js file and named that import as 'calc'.
@@ -317,9 +315,9 @@ So the function is invoked that way.
 calc.mmToCm(input);
 ```
 
-<b>3. Program select options so the user can change units easily in the app's interface</b>
+<b>3. Program select options so a user can change units easily in the app's interface</b>
             <p>
-            Select options are basically the units. There are 2 &lt;select&gt; tags with
+            Select options are basically some units. There are 2 &lt;select&gt; tags with
             &lt;options&gt; in the HTML sheet. User can decide what units should be converted.
           </p>
             
@@ -371,13 +369,13 @@ calc.mmToCm(input);
 let unitsTo = document.querySelector('.unitsTo');
 ```            
 <p>
-           To access options (&lt;option&gt; tag) inside the &lt;select&gt;, I created a
+           To access options (&lt;option&gt; tag) inside the &lt;select&gt;, I created the
             variables 'options1' & 'options2' and assigned to them created before variables such as
-            unitsFrom & unitsTo, with a property 'selectedOptions'.
+            unitsFrom & unitsTo, with the property 'selectedOptions'.
           </p>
           <p>
-            Then I created a for loop inside another for loop, and looped through 'options1' and
-            'options2' gaining an access to each individual &lt;option&gt;.
+            Then I created a for loop inside another for loop and looped through the 'options1' and
+            'options2' gaining access to each individual &lt;option&gt;.
           </p> 
           
  ``` Javascript
@@ -393,9 +391,9 @@ console.log(options2[0]);
 ```
 How does the browser know what units a user choose ? I created if conditions (inside 2
             for loops) where I pointed the first looped element among 'options1' & 'options2', which
-            is 'options1[0]' & 'options2[0]'. Just a reminder that robots count from 0 instead of 1.
+            is the 'options1[0]' & 'options2[0]'. Just a reminder that robots count from 0 instead of 1.
 
-Logically, the chosen unit by the user will always be the first one - [0].
+Logically, the chosen unit by a user will always be the first one - [0].
 
 Based on if statements the browser knows what to do and what functions should be invoked.           
             
@@ -422,8 +420,8 @@ document.querySelector('.formula').textContent = `Formula: ${input} ${options1[0
 <p class="conversionResult"></p>
 <p class="formula"></p>
 ```            
-I created an empty variable 'output'. The result of conversion is based on the if
-            condition and its function is assigned to a variable 'output'. A mutable value that
+I created the empty variable 'output'. The result of conversion is based on the if
+            condition and its function is assigned to the variable 'output'. A mutable value that
             'output' variable contains, gets assigned to DOM element with a class of
             'conversionResult' with an added property of 'textContent'. The result conversion will
             be dynamically displayed in the &lt;p&gt; tag.  
@@ -444,7 +442,7 @@ I created an empty variable 'output'. The result of conversion is based on the i
 ## Problems I encountered during the development process
 Honestly, I didn't encounter many problems while coding. To a surprise, with a little
             bit of analyzing I was actually able to match javascript concepts very fast to solve any
-            js problems. However, I got stuck for a while styling website ...
+            problems. However, I got stuck for a while styling website ...
     
 <b>SCSS and nested classes</b>  
 What I love about SCSS are nested classes. I just find it comfortable to create some
@@ -480,7 +478,7 @@ However, nested classes can be tricky especially when you want to override some 
 
 I tried to override some styles, especially doing media queries, and even though I added
             styles to a certain HTML element with a class of 'x', the results were not displayed in
-            the browser. I was like - grrrr, what the hell is going on and why the styles are not
+            the browser. I was confused about why the styles are not
             overridden.
             
 Well, it's all because I ignored initially declared nested classes. What I mean, based
@@ -498,6 +496,9 @@ So in fact if you want to override any styles doing for example media queries, y
             should use previously declared nested classes.
             
 ## Overall feelings
-I am happy that I was able to write my first app. It is not something innovative, but it
+I am happy that I was able to write my first application. It is not something innovative, but it
             is mine, from A to Z written by me. I am full of motivation to keep working hard. More
             projects coming soon. Thank you for reading.
+            
+## Contributing
+Contributing to this project is very welcome. Please send an inquiry.
