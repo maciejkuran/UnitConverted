@@ -18,53 +18,59 @@
   </head>
   <body>
     <container class="mainContainer">
-      <header>
+      <nav>
         <a href="https://unitconverted.com">
           <img src="./img/unitconverted logo.svg" width="250rem" alt="unitconverted logo, online unit converter" />
         </a>
-      </header>
+      </nav>
+
       <main>
-        <div class="wrapper">
-          <a href="https://unitconverted.com">
-            <span><i class="fa-solid fa-arrow-left-long"></i>home page</span></a
-          >
-          <h1>Time Converter</h1>
-          <p>Convert second, millisecond, minute, hour, day, week, month, year</p>
-        </div>
-        <div class="converterWrapper">
-          <p class="fromMobile">From:</p>
-          <div class="converterInternalWrapper1">
-            <p class="from">From:</p>
-            <input class="inputUnit" type="number" placeholder="write numbers" />
-            <select name="unitsFrom" class="unitsFrom">
-              <option value="fromsecond" class="fromsecond">second</option>
-              <option value="frommillisecond" class="frommillisecond">millisecond</option>
-              <option value="fromminute" class="fromminute">minute</option>
-              <option value="fromhour" class="fromhour">hour</option>
-              <option value="fromday" class="fromday">day</option>
-              <option value="fromweek" class="fromweek">week</option>
-              <option value="frommonth" class="frommonth">month</option>
-              <option value="fromyear" class="fromyear">year</option>
-            </select>
+        <header>
+          <div class="wrapper">
+            <a href="https://unitconverted.com">
+              <span><i class="fa-solid fa-arrow-left-long"></i>home page</span></a
+            >
+            <h1>Time Converter</h1>
+            <p>Convert second, millisecond, minute, hour, day, week, month, year</p>
           </div>
-          <p class="toMobile">To:</p>
-          <div class="converterInternalWrapper2">
-            <p class="to">To:</p>
-            <select name="unitsTo" class="unitsTo">
-              <option value="tomillisecond" class="tomillisecond">millisecond</option>
-              <option value="tosecond" class="tosecond">second</option>
-              <option value="tominute" class="tominute">minute</option>
-              <option value="tohour" class="tohour">hour</option>
-              <option value="today" class="today">day</option>
-              <option value="toweek" class="toweek">week</option>
-              <option value="tomonth" class="tomonth">month</option>
-              <option value="toyear" class="toyear">year</option>
-            </select>
-            <button class="convertBtn">CONVERT</button>
+        </header>
+
+        <section>
+          <div class="converterWrapper">
+            <p class="fromMobile">From:</p>
+            <div class="converterInternalWrapper1">
+              <p class="from">From:</p>
+              <input class="inputUnit" type="number" placeholder="write numbers" />
+              <select name="unitsFrom" class="unitsFrom">
+                <option value="fromsecond" class="fromsecond">second</option>
+                <option value="frommillisecond" class="frommillisecond">millisecond</option>
+                <option value="fromminute" class="fromminute">minute</option>
+                <option value="fromhour" class="fromhour">hour</option>
+                <option value="fromday" class="fromday">day</option>
+                <option value="fromweek" class="fromweek">week</option>
+                <option value="frommonth" class="frommonth">month</option>
+                <option value="fromyear" class="fromyear">year</option>
+              </select>
+            </div>
+            <p class="toMobile">To:</p>
+            <div class="converterInternalWrapper2">
+              <p class="to">To:</p>
+              <select name="unitsTo" class="unitsTo">
+                <option value="tomillisecond" class="tomillisecond">millisecond</option>
+                <option value="tosecond" class="tosecond">second</option>
+                <option value="tominute" class="tominute">minute</option>
+                <option value="tohour" class="tohour">hour</option>
+                <option value="today" class="today">day</option>
+                <option value="toweek" class="toweek">week</option>
+                <option value="tomonth" class="tomonth">month</option>
+                <option value="toyear" class="toyear">year</option>
+              </select>
+              <button class="convertBtn">CONVERT</button>
+            </div>
           </div>
-        </div>
-        <p class="conversionResult"></p>
-        <p class="formula"></p>
+          <p class="conversionResult"></p>
+          <p class="formula"></p>
+        </section>
 
         <section class="sectionBelowConverterPage">
           <div class="studyLengthUnits">

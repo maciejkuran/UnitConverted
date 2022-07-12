@@ -18,43 +18,49 @@
   </head>
   <body>
     <container class="mainContainer">
-      <header>
+      <nav>
         <a href="https://unitconverted.com">
           <img src="./img/unitconverted logo.svg" width="250rem" alt="unitconverted logo, online unit converter" />
         </a>
-      </header>
+      </nav>
+
       <main>
-        <div class="wrapper">
-          <a href="https://unitconverted.com">
-            <span><i class="fa-solid fa-arrow-left-long"></i>home page</span></a
-          >
-          <h1>Temperature Converter</h1>
-          <p>Convert celsius, kelvin, fahrenheit</p>
-        </div>
-        <div class="converterWrapper">
-          <p class="fromMobile">From:</p>
-          <div class="converterInternalWrapper1">
-            <p class="from">From:</p>
-            <input class="inputUnit" type="number" placeholder="write numbers" />
-            <select name="unitsFrom" class="unitsFrom">
-              <option value="fromcelsius" class="fromcelsius">celsius</option>
-              <option value="fromkelvin" class="fromkelvin">kelvin</option>
-              <option value="fromfahrenheit" class="fromfahrenheit">fahrenheit</option>
-            </select>
+        <header>
+          <div class="wrapper">
+            <a href="https://unitconverted.com">
+              <span><i class="fa-solid fa-arrow-left-long"></i>home page</span></a
+            >
+            <h1>Temperature Converter</h1>
+            <p>Convert celsius, kelvin, fahrenheit</p>
           </div>
-          <p class="toMobile">To:</p>
-          <div class="converterInternalWrapper2">
-            <p class="to">To:</p>
-            <select name="unitsTo" class="unitsTo">
-              <option value="tofahrenheit" class="tofahrenheit">fahrenheit</option>
-              <option value="tocelsius" class="tocelsius">celsius</option>
-              <option value="tokelvin" class="tokelvin">kelvin</option>
-            </select>
-            <button class="convertBtn">CONVERT</button>
+        </header>
+
+        <section>
+          <div class="converterWrapper">
+            <p class="fromMobile">From:</p>
+            <div class="converterInternalWrapper1">
+              <p class="from">From:</p>
+              <input class="inputUnit" type="number" placeholder="write numbers" />
+              <select name="unitsFrom" class="unitsFrom">
+                <option value="fromcelsius" class="fromcelsius">celsius</option>
+                <option value="fromkelvin" class="fromkelvin">kelvin</option>
+                <option value="fromfahrenheit" class="fromfahrenheit">fahrenheit</option>
+              </select>
+            </div>
+            <p class="toMobile">To:</p>
+            <div class="converterInternalWrapper2">
+              <p class="to">To:</p>
+              <select name="unitsTo" class="unitsTo">
+                <option value="tofahrenheit" class="tofahrenheit">fahrenheit</option>
+                <option value="tocelsius" class="tocelsius">celsius</option>
+                <option value="tokelvin" class="tokelvin">kelvin</option>
+              </select>
+              <button class="convertBtn">CONVERT</button>
+            </div>
           </div>
-        </div>
-        <p class="conversionResult"></p>
-        <p class="formula"></p>
+          <p class="conversionResult"></p>
+          <p class="formula"></p>
+        </section>
 
         <section class="sectionBelowConverterPage">
           <div class="studyLengthUnits">
