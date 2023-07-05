@@ -14,7 +14,7 @@ of units: length, temperature, area, volume, weight, time, and speed. It is a su
 helpful tool if you expect to have some units converted fast. In addition, you can read
 the definitions of each unit with direct reference to scientific sources.
 
-Live app ➡️ https://unitconverted.com
+Live app ➡️ https://unitconverted.netlify.app/
 
 ## Case Study
 
@@ -125,7 +125,3 @@ I am happy that I was able to write my first application. It is not something in
 is mine, from A to Z designed and coded by me.
 
 <b>I am aware that this could be coded way better so I hope to come back to this project one day and refactor this long code.</b>
-
-## Contributing
-
-Contributing to this project is very welcome. Please send an inquiry.
