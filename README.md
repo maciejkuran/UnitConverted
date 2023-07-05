@@ -2,7 +2,7 @@
 <img src="https://user-images.githubusercontent.com/103118542/163263986-b74ed5c3-9566-4f10-a328-2a88a1ab5b3a.svg" width="400">
 </p>
 
-# UnitConverted.com
+# UnitConverted
 
 <span><img src="https://img.shields.io/badge/Adobe%20XD-470137?style=for-the-badge&logo=Adobe%20XD&logoColor=#FF61F6" /> </span>
 <span><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /> </span>
